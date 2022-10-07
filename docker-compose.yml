@@ -1,0 +1,16 @@
+version: '1'
+services:
+    api: 
+        container_name: node_api-container
+        image: api-web
+        build:  
+            context: ./
+            dockerfile: ./dockerfile
+        ports: 
+            - '3000:3000'
+        restart: always
+        stdin_open: true
+        tty: true
+        volumes: 
+            - /opt/projetos/node/projeto-node/logs
+            
