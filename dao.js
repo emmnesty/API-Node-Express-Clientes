@@ -26,3 +26,4 @@ function updateWhereId(evento, res){
 }
 
 module.exports = { selectAll, selectWhereId, deleteWhereId, insert, updateWhereId};
+//comment
